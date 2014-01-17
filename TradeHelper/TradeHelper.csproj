@@ -57,14 +57,14 @@
     <Compile Include="Auth\IAuthService.cs" />
     <Compile Include="Auth\Outpost\AuthService.cs" />
     <Compile Include="Auth\InvalidCredentialsException.cs" />
-    <Compile Include="Bump\Bazaar\BumpService.cs" />
     <Compile Include="Bump\BumpTimer.cs" />
-    <Compile Include="Bump\IBumpService.cs" />
-    <Compile Include="Bump\Outpost\BumpService.cs" />
-    <Compile Include="Data\Bazaar\TradeService.cs" />
-    <Compile Include="Data\ITradeService.cs" />
-    <Compile Include="Data\Outpost\TradeService.cs" />
-    <Compile Include="Data\TradeItem.cs" />
+    <Compile Include="Data\Bump\Bazaar\BumpService.cs" />
+    <Compile Include="Data\Bump\IBumpService.cs" />
+    <Compile Include="Data\Bump\Outpost\BumpService.cs" />
+    <Compile Include="Data\Trade\Bazaar\TradeService.cs" />
+    <Compile Include="Data\Trade\ITradeService.cs" />
+    <Compile Include="Data\Trade\Outpost\TradeService.cs" />
+    <Compile Include="Data\Trade\TradeItem.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

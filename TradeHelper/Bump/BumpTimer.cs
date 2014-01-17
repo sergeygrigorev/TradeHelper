@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
-using TradeHelper.Bump;
+using TradeHelper.Data.Bump.Bazaar;
 
 namespace TradeHelper.Bump
 {
@@ -15,8 +10,8 @@ namespace TradeHelper.Bump
 	{
 		private Timer timer;
 		private int interval;
-		private Outpost.BumpService outpost;
-		private Bazaar.BumpService bazaar;
+		private Data.Bump.Outpost.BumpService outpost;
+		private BumpService bazaar;
 		
 		public BumpTimer(int IntervalMilliseconds)
 		{
