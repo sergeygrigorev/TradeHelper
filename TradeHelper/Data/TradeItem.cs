@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace TradeHelper.Data
 {
+	/* Represents one single trade on any site.
+	 * Stores trade id and last bumped time.
+	 * Other info is not required for now
+	 * Can be extended if needed
+	 */
 	class TradeItem
 	{
 		private int id;

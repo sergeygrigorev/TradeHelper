@@ -8,9 +8,9 @@ namespace TradeHelper
 {
 	static class Program
 	{
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
+		/* Ololo Main
+		 */
+
 		[STAThread]
 		static void Main()
 		{

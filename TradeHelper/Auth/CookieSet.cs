@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TradeHelper.Auth
 {
+	/* Represents some collection of cookies
+	 */
+
 	class CookieSet
 	{
 		private Dictionary<string, string> _data;

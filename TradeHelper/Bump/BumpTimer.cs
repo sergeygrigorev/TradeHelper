@@ -8,6 +8,9 @@ using TradeHelper.Bump;
 
 namespace TradeHelper.Bump
 {
+	/* This class allows us to auto-bump all trades each %interval% %time-measurement-unit%
+	 */
+
 	class BumpTimer
 	{
 		private Timer timer;

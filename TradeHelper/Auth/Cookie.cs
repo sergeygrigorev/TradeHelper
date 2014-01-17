@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TradeHelper.Auth
 {
+	/* Represents single Cookie.
+	 */
+
 	public class Cookie
 	{
 		private string _name, _value;

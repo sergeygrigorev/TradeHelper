@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TradeHelper.Auth
 {
+	/* Represents credentials to access some host
+	 * */
+
 	class Credentials
 	{
 		private CookieSet cookies;
