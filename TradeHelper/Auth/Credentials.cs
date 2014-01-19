@@ -11,28 +11,35 @@ namespace TradeHelper.Auth
 
 	class Credentials
 	{
+		public static string CredentialsPath = "Credentials.res";
+
 		private CookieSet cookies;
 		private readonly string host;
 
-		Credentials(string Host, string Creds):this(Host,new CookieSet(Creds))
+		public Credentials(string Host, string Creds):this(Host,new CookieSet(Creds))
 		{
 			
 		}
 
-		Credentials(string Host, CookieSet Creds)
+		public Credentials(string Host, CookieSet Creds)
 		{
 			host = Host;
 			cookies = Creds;
 		}
 
-		public string Get()
+		public CookieSet Get()
 		{
-			return cookies.ToString();
+			return cookies;
 		}
 
 		public string GetHost()
 		{
 			return host;
+		}
+
+		public override string ToString()
+		{
+			return cookies.ToString();
 		}
 	}
 }

@@ -1,21 +1,20 @@
-using System;
 using System.Collections.Generic;
 using TradeHelper.Auth;
 
-namespace TradeHelper.Data.Trade.Bazaar
+namespace TradeHelper.Data.Trade
 {
-	class TradeService : ITradeService
+	class BazaarTradeService : ITradeService
 	{
-		private Credentials creds;
-
-		public TradeService(Credentials Creds)
+		private BazaarAuthService auth;
+		
+		public BazaarTradeService()
 		{
-			creds = Creds;
+			auth = new BazaarAuthService();
 		}
 
 		public IEnumerable<TradeItem> GetTrades()
 		{
-			throw new Exception();
+			return new List<TradeItem>();
 		}
 
 		public IEnumerable<TradeItem> GetTradesToBump()

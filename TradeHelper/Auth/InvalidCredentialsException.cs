@@ -12,6 +12,11 @@ namespace TradeHelper.Auth
 
 	class InvalidCredentialsException : Exception
 	{
+		public InvalidCredentialsException(string message):base(message)
+		{
+			
+		}
+
 		public override string Message
 		{
 			get { return "Credentials are invalid"; }

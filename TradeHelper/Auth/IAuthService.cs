@@ -12,7 +12,6 @@ namespace TradeHelper.Auth
 
 	interface IAuthService
 	{
-		Credentials GetCreds();
-		bool IsValid(Credentials Creds);
+		Credentials Credentials { get; }
 	}
 }

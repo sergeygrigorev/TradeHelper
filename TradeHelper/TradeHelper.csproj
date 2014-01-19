@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,21 +53,25 @@
     <Compile Include="AuthForm.Designer.cs">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Auth\Bazaar\AuthService.cs" />
+    <Compile Include="Auth\BazaarAuthService.cs" />
     <Compile Include="Auth\Cookie.cs" />
     <Compile Include="Auth\CookieSet.cs" />
     <Compile Include="Auth\Credentials.cs" />
     <Compile Include="Auth\IAuthService.cs" />
-    <Compile Include="Auth\Outpost\AuthService.cs" />
+    <Compile Include="Auth\OutpostAuthService.cs" />
     <Compile Include="Auth\InvalidCredentialsException.cs" />
     <Compile Include="Bump\BumpTimer.cs" />
-    <Compile Include="Data\Bump\Bazaar\BumpService.cs" />
+    <Compile Include="Data\Bump\BazaarBumpService.cs" />
     <Compile Include="Data\Bump\IBumpService.cs" />
-    <Compile Include="Data\Bump\Outpost\BumpService.cs" />
-    <Compile Include="Data\Trade\Bazaar\TradeService.cs" />
+    <Compile Include="Data\Bump\OutpostBumpService.cs" />
+    <Compile Include="Data\MyWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\Trade\BazaarTradeService.cs" />
     <Compile Include="Data\Trade\ITradeService.cs" />
-    <Compile Include="Data\Trade\Outpost\TradeService.cs" />
+    <Compile Include="Data\Trade\OutpostTradeService.cs" />
     <Compile Include="Data\Trade\TradeItem.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +95,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

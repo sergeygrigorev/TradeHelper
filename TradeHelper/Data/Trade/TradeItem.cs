@@ -9,23 +9,7 @@ namespace TradeHelper.Data.Trade
 	 */
 	class TradeItem
 	{
-		private int id;
-		private DateTime lastBumped;
-
-		public TradeItem(int Id, DateTime LastBumped)
-		{
-			id = Id;
-			lastBumped = LastBumped;
-		}
-
-		public int Id
-		{
-			get { return id; }
-		}
-
-		public DateTime LastBumped
-		{
-			get { return lastBumped; }
-		}
+		public int Id { get; set; }
+		public DateTime LastBumped { get; set; }
 	}
 }

@@ -1,5 +1,5 @@
 using System.Timers;
-using TradeHelper.Data.Bump.Bazaar;
+using TradeHelper.Data.Bump;
 
 namespace TradeHelper.Bump
 {
@@ -10,8 +10,8 @@ namespace TradeHelper.Bump
 	{
 		private Timer timer;
 		private int interval;
-		private Data.Bump.Outpost.BumpService outpost;
-		private BumpService bazaar;
+		private OutpostBumpService outpost;
+		private BazaarBumpService bazaar;
 		
 		public BumpTimer(int IntervalMilliseconds)
 		{
