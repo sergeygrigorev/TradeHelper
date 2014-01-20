@@ -9,14 +9,15 @@ namespace TradeHelper.Bump
 	class BumpTimer
 	{
 		private Timer timer;
-		private int interval;
 		private OutpostBumpService outpost;
 		private BazaarBumpService bazaar;
-		
-		public BumpTimer(int IntervalMilliseconds)
+
+		public BumpTimer(int IntervalMilliseconds = 1000*60*5)
 		{
 			timer = new Timer();
-			interval = IntervalMilliseconds;
+			timer.Interval = IntervalMilliseconds;
+			outpost = new OutpostBumpService();
+			bazaar = new BazaarBumpService();
 			Register(outpost.BumpAll);
 			Register(bazaar.BumpAll);
 			Start();
